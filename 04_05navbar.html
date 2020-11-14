@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+    <title>Ninja Coffee</title>
+</head>
+
+<body>
+    <!-- There are lots of options in Bulma to create and customise navbars. -->
+    <!-- nav is the top level element of navbars. The 'has-shadow' class will 
+    draw a thin grey line underneath the navbar The 'is-white' class will stop 
+    menu items in the navbar turn blue, when the user hovers the cursor over 
+    them. -->
+    <nav class="navbar has-shadow is-white">
+        <!-- logo/brand -->
+        <div class="navbar-brand">
+            <a href="" class="navbar-item">
+                <img src="/assets/logo.png" alt="site logo" style="max-height: 70px" class="py-2 px-2">
+            </a>
+            <!-- This is the icon that appears in the navbar instead of menu 
+            items on smaller screen. Elements that belong to the 'is-active' 
+            class are visible on the screen. We need to write the JS code, that 
+            performs the toggle. -->
+            <a href="" class="navbar-burger" id="burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
+        </div>
+
+        <div class="navbar-menu" id="nav-links">
+            <!-- The following div will make its children right aligned. -->
+            <div class="navbar-end">
+                <a href="" class="navbar-item">My Account</a>
+                <a href="" class="navbar-item">Shopping Cart (0)</a>
+            </div>
+        </div>
+    </nav>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
