@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+    <title>Ninja Coffee</title>
+</head>
+
+<body>
+
+    <nav class="navbar has-shadow is-white">
+        <div class="navbar-brand">
+            <a class="navbar-item">
+                <img src="assets/logo.png" alt="site logo" style="max-height: 70px" class="py-2 px-2">
+            </a>
+
+            <a class="navbar-burger" id="burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
+        </div>
+
+        <div class="navbar-menu" id="nav-links">
+            <div class="navbar-end">
+                <a href="" class="navbar-item">My Account</a>
+                <a href="" class="navbar-item">Shopping Cart (0)</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="section pt-4 pb-0">
+        <nav class="breadcrumb has-arrow-separator">
+            <ul class="container">
+                <li><a class="has-text-grey">Coffe Ninja</a></li>
+                <li><a class="has-text-grey">Shop</a></li>
+                <li class="is-active"><a>Docker Dark Roast</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- product info -->
+    <!-- Bulma uses a column system similar to Bootstrap, based on flexbox. 
+    The screen is divided into 12 columns. By default each of our columns 
+    will take up the same amount of space, but we can override this by 
+    assigning individual columns to various classes.-->
+    <section class="section">
+
+        <div class="container">
+            <div class="columns is-vcentered">
+                <!-- By default each of our columns would span 4 screen 
+                columns (12/3). But because of the 'is-2' class, the first 
+                column will only span 2 screen columns, the other two will 
+                span 5 screen columns each. -->
+                <div class="column is-3">
+                    <h1 class="is-size-1 title">Docker</h1>
+                    <h2 class="is-size-2 subtitle">Dark Roast</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi doloremque repudiandae eius
+                        laborum eos consectetur similique. Amet provident sed temporibus.</p>
+                </div>
+                <!-- The 'has-text-centered' class makes the child of the div 
+                element vertically centered. -->
+                <div class="column is-5 has-text-centered">
+                    <img src="assets/product.png" alt="docker coffee image" class="px-6">
+                </div>
+                <div class="column is-4">
+                    <div class="is-size-4 mb-4">£10.95</div>
+                    <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, maxime.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="index.js"></script>
+</body>
+
+</html>

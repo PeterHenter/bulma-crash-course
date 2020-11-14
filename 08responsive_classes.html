@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+    <title>Ninja Coffee</title>
+</head>
+
+<body>
+
+    <nav class="navbar has-shadow is-white">
+        <div class="navbar-brand">
+            <a class="navbar-item">
+                <img src="assets/logo.png" alt="site logo" style="max-height: 70px" class="py-2 px-2">
+            </a>
+
+            <a class="navbar-burger" id="burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
+        </div>
+
+        <div class="navbar-menu" id="nav-links">
+            <div class="navbar-end">
+                <a href="" class="navbar-item">My Account</a>
+                <a href="" class="navbar-item">Shopping Cart (0)</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="section pt-4 pb-0">
+        <nav class="breadcrumb has-arrow-separator">
+            <ul class="container">
+                <li><a class="has-text-grey">Coffe Ninja</a></li>
+                <li><a class="has-text-grey">Shop</a></li>
+                <li class="is-active"><a>Docker Dark Roast</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- Bulma also has responsive classes, which means that certain classes 
+    will be applied based on the screensize of the device, the webpage is 
+    displayed on. Bulma has 5 screen size categories. Adding these names as 
+    suffixes to class names will result in the class only to be applied, if the 
+    screen of the device is at least as wide as defined by the suffix name. 
+    These suffixes can not be added to all the Bulma classes, but they work 
+    with font sizes and column widths. -->
+    <section class="section">
+
+        <div class="container">
+            <!-- The 'is-multiline' class will display the 3 columns in 2 rows, 
+            when we reach tablet size. Below tablet size the 3 columns will be 
+            displayed on top of each other. On desktop size and above they will 
+            be in one row across 3, 5 and 4 columns respectively. -->
+            <div class="columns is-vcentered is-multiline">
+                <div class="column is-6-tablet is-3-desktop">
+                    <!-- According to the responsive classes below, the font 
+                    size will be set to 3 (em?) on screens that are bigger 
+                    than mobile, but smaller than desktop. On desktop size 
+                    and larger screens the font size will be 1. (This does not 
+                    seem to work as it should. Need more testing!!!)-->
+                    <h1 class="is-size-3-mobile is-size-1-desktop title">Docker</h1>
+                    <h2 class="is-size-3-mobile is-size-2-desktop subtitle">Dark Roast</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi doloremque repudiandae eius
+                        laborum eos consectetur similique. Amet provident sed temporibus.</p>
+                </div>
+
+                <div class="column is-6-tablet is-5-desktop has-text-centered">
+                    <img src="assets/product.png" alt="docker coffee image" class="px-6">
+                </div>
+                <div class="column is-12-tablet is-4-desktop">
+                    <div class="is-size-4 mb-4">£10.95</div>
+                    <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, maxime.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <!-- For some reason the classes of the 'columns' div below are 
+            supposed to increase the gap between the 2 child elements??? -->
+            <div class="columns is-8 is-variable">
+                <div class="column is-7-tablet">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus minus optio perspiciatis libero atque, totam voluptate exercitationem praesentium provident doloremque dolorum mollitia quis incidunt minima ratione asperiores dolore sapiente maiores?</p>
+                </div>
+                <div class="column is-5-tablet">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic non quisquam fugit consequatur qui aliquid minima laboriosam quia nisi sunt et nobis, expedita facilis ab voluptatibus magni omnis ad quis?</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
